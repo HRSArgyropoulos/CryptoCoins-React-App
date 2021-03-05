@@ -1,5 +1,6 @@
 import CryptoPrice from './components/CryptoPrice'
 import Portfolio from './components/Portfolio';
+import Header from "./components/Header";
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="heading">if you had <span>Crypto</span></h1>
+      <Header />
       <Portfolio />
       <div className="prices-container">
         <CryptoPrice data = {coins[0]} />
