@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --dark: #475469;
+  --blue: #3a83f8;
+  --sunglow: #FDCA40;
+  --orange: #F79824;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--dark);
+}
+
+.App {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--blue);
+  text-align: center;
+}
+
+.heading span {
+  color: var(--orange);
+}
+
+.prices-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgb(196, 196, 196);
+  border-radius: 15px;
+}
+
+.coin-price {
+  background-color: white;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.coin-price > * {
+  padding: 0.3rem;
+}
+
+.portfolio {
+  background-color: white;
+  text-align: center;
+  padding: 0.2rem;
+  margin: 1rem 0;
 }
