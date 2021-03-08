@@ -1,6 +1,6 @@
 :root {
-  --dark: #475469;
-  --blue: #3a83f8;
+  --dark: #141414;
+  --blue: rgb(98, 181, 248);
   --sunglow: #FDCA40;
   --orange: #F79824;
 }
@@ -12,13 +12,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: var(--dark);
-}
-
-.App {
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .heading {
@@ -34,12 +29,10 @@ body {
   max-width: 400px;
   margin: 0 auto;
   background-color: rgb(196, 196, 196);
-  border-radius: 15px;
 }
 
 .coin-price {
   background-color: white;
-  border-radius: 5px;
   margin: 1rem 0;
   display: flex;
   justify-content: center;
