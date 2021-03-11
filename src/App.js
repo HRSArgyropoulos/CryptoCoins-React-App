@@ -7,36 +7,37 @@ function App() {
   const coins = [
     {
       name: "BitCoin",
-      price: "42,137.60",
+      price: 42137.60,
       currency: "€"
     },
     {
       name: "Ethereum",
-      price: "1,302.56",
-      currency: "€"
-    },
-    {
-      name: "XRP",
-      price: "0.3844",
+      price: 1302.56,
       currency: "€"
     },
     {
       name: "Litecoin",
-      price: "146.5211",
+      price: 146.5211,
       currency: "€"
     },
-
   ]
+
+/*   const getApiPrices = async (url) => {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    coins[0].price = data.ticker.price;
+  }
+
+  getApiPrices("https://api.cryptonator.com/api/ticker/btc-eur");
+  console.log(coins[0]); */
 
   return (
     <div className="App">
       <Header />
       <Portfolio />
       <div className="prices-container">
-        <CryptoPrice data = {coins[0]} />
-        <CryptoPrice data = {coins[1]} />
-        <CryptoPrice data = {coins[2]} />
-        <CryptoPrice data = {coins[3]} />
+        <CryptoPrice {...coins[0]}/>
       </div>
     </div>
   )
