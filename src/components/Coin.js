@@ -1,16 +1,15 @@
 import React from "react";
-/* import Button from "./Button"; */
 
-class CryptoPrice extends React.Component {
+class Coin extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {name: props.name, price: props.price, currency: props.currency};
+    this.state = {name: props.name, base: props.base, price: 0, currency: "€"};
   }
 
   componentDidMount() {
     this.coinID = setInterval(() => {
       this.updateCoin();
-    }, 5 * 1000);
+    }, 1 * 1000);
   }
 
   componentWillUnmount() {
@@ -18,10 +17,7 @@ class CryptoPrice extends React.Component {
   }
 
   updateCoin() {
-    /* this.setState((state) => ({
-      price : this.state.price + 5,
-    })); */
-    fetch("https://api.cryptonator.com/api/ticker/btc-eur")
+    fetch(`https://api.cryptonator.com/api/ticker/${this.state.base}-eur`)
     .then (response => response.json())
     .then (data => {
       this.setState({
@@ -43,4 +39,4 @@ class CryptoPrice extends React.Component {
 
 }
 
-export default CryptoPrice;
+export default Coin;
