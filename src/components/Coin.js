@@ -28,12 +28,15 @@ class Coin extends React.Component {
 
   render() {
     return (
-      <div className="prices">
         <div className="coin-price">
           <h2>{this.state.name}</h2>
+          <small>{this.state.base}</small>
           <div>{this.state.price + " " + this.state.currency}</div>
+          <div className="buy-coin">
+            <input type="number" min="0" placeholder="enter amount"/>
+            <button type="submit">Buy</button>
+          </div>
         </div>
-      </div>
     );
   }
 

@@ -18,11 +18,14 @@ const CryptoPrices = (prop) => {
   ]
 
   return (
+    <>
+    <h2 style={{textAlign:"center", color:"white", textDecoration: "underline"}}>Crypto Coin Prices</h2>
     <div className="prices-container">
       <Coin {...coins[0]}/>
       <Coin {...coins[1]}/>
       <Coin {...coins[2]}/>
     </div>
+    </>
   )
 }
 
