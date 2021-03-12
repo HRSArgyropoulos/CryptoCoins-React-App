@@ -1,9 +1,10 @@
 import React from "react";
+import BuyCoin from "./BuyCoin"
 
 class Coin extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {name: props.name, base: props.base, price: 0, currency: "€"};
+    this.state = {name: props.name, base: props.base, price: 0, currency: "€", rise: true };
   }
 
   componentDidMount() {
@@ -20,8 +21,17 @@ class Coin extends React.Component {
     fetch(`https://api.cryptonator.com/api/ticker/${this.state.base}-eur`)
     .then (response => response.json())
     .then (data => {
+      const newPrice = Math.round(data.ticker.price);
+      if (newPrice !== this.state.price) {
+        if (newPrice > this.state.price) {
+          this.setState({rise: true});
+        }
+        else {
+          this.setState({rise: false})
+        }
+      }
       this.setState({
-        price: Math.round(data.ticker.price),
+        price: newPrice,
       })
     })
   }
@@ -31,11 +41,8 @@ class Coin extends React.Component {
         <div className="coin-price">
           <h2>{this.state.name}</h2>
           <small>{this.state.base}</small>
-          <div>{this.state.price + " " + this.state.currency}</div>
-          <div className="buy-coin">
-            <input type="number" min="0" placeholder="enter amount"/>
-            <button type="submit">Buy</button>
-          </div>
+          <div style={{color: this.state.rise ? "green" : "red"}}>{this.state.price + " " + this.state.currency}</div>
+          <BuyCoin className="buy-coin" price={this.state.price}/>
         </div>
     );
   }
