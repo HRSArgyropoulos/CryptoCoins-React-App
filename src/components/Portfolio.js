@@ -11,7 +11,7 @@ const Portfolio = ( { amount, currency } ) => {
 
 Portfolio.defaultProps = {
     amount: 100,
-    currency: "Euro",
+    currency: "€",
 }
 
 Portfolio.propTypes = {
