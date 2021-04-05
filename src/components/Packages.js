@@ -2,12 +2,14 @@ import PackageInfo from './PackageInfo'
 
 const Packages = () => {
     return (
-        <div>
+        <section className="packages">
             <h1>Our packages offer:</h1>
-            <PackageInfo tier="Free"/>
-            <PackageInfo tier="Support"/>
-            <PackageInfo tier="Shareholder"/>
-        </div>
+            <div className="pkg">
+                <PackageInfo className="free-pkg" tier="Free"/>
+                <PackageInfo className="supp-pkg" tier="Support"/>
+                <PackageInfo className="shrhold-pkg" tier="Shareholder"/>
+            </div>
+        </section>
     )
 }
 

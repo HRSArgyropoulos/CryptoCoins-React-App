@@ -33,7 +33,7 @@ export default class PackageInfo extends Component {
     render() {
         return (
             <div style={{color:"white"}}>
-                <h1>{this.tier} Tier</h1>
+                <h2>{this.tier} Tier</h2>
                 <ul>
                     <li>{this.details.balance} starting balance</li>
                     <li>{this.details.packs} Crypto Packs per week</li>

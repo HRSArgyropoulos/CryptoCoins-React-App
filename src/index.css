@@ -3,6 +3,7 @@
   --blue: rgb(98, 181, 248);
   --sunglow: #FDCA40;
   --orange: #F79824;
+  --radius: 10px;
 }
 
 * {
@@ -14,6 +15,16 @@
 body,button {
   font-family: 'Karla', sans-serif;
   background-color: var(--dark);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
 }
 
 .heading {
@@ -110,4 +121,68 @@ input::placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+/* PACKAGES */
+
+.free-pkg {
+  grid-area: free;
+}
+
+.supp-pkg {
+  grid-area: support;
+}
+
+.shrhold-pkg {
+  grid-area: shareholder;
+}
+
+.packages {
+  padding: 5rem 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.packages h2 {
+  margin-bottom: 2rem;
+}
+
+
+.pkg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "free support shareholder";
+}
+
+.pkg > div {
+  border: 2px solid white;
+  padding: 3rem 0;
+  border-radius: var(--radius);
+  margin: 1rem;
+}
+
+.pkg li {
+  padding: 0.3rem 0;
+}
+
+.pkg > * {
+  transition: cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+}
+
+.pkg > *:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .pkg {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "free"
+    "support"
+    "shareholder";
+  }
 }
