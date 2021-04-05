@@ -2,6 +2,7 @@ import CryptoPrices from './components/CryptoPrices'
 import Portfolio from './components/Portfolio';
 import Header from "./components/Header";
 import PackStore from './components/PackStore';
+import Packages from './components/Packages';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Portfolio />
       <CryptoPrices/>
       <PackStore />
+      <Packages/>
     </div>
   )
 }
