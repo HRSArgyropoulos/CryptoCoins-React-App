@@ -74,7 +74,8 @@ button {
   background-color: var(--orange);
   border: none;
   border-radius: 50px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
 }
 
 input {
@@ -175,6 +176,11 @@ input::placeholder {
 
 .pkg > *:hover {
   transform: scale(1.02);
+}
+
+.pkg button {
+  margin-top: 2rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
