@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/IfUHadCrypto-ReactJS/static/css/main.5c62a303.chunk.css",
-    "main.js": "/IfUHadCrypto-ReactJS/static/js/main.a262ef82.chunk.js",
-    "main.js.map": "/IfUHadCrypto-ReactJS/static/js/main.a262ef82.chunk.js.map",
-    "runtime-main.js": "/IfUHadCrypto-ReactJS/static/js/runtime-main.88c6018a.js",
-    "runtime-main.js.map": "/IfUHadCrypto-ReactJS/static/js/runtime-main.88c6018a.js.map",
-    "static/js/2.afdce37c.chunk.js": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js",
-    "static/js/2.afdce37c.chunk.js.map": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js.map",
-    "index.html": "/IfUHadCrypto-ReactJS/index.html",
-    "static/css/main.5c62a303.chunk.css.map": "/IfUHadCrypto-ReactJS/static/css/main.5c62a303.chunk.css.map",
-    "static/js/2.afdce37c.chunk.js.LICENSE.txt": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js.LICENSE.txt"
+    "main.css": "/React-JS-IfYouHadCrypto/static/css/main.5c62a303.chunk.css",
+    "main.js": "/React-JS-IfYouHadCrypto/static/js/main.a262ef82.chunk.js",
+    "main.js.map": "/React-JS-IfYouHadCrypto/static/js/main.a262ef82.chunk.js.map",
+    "runtime-main.js": "/React-JS-IfYouHadCrypto/static/js/runtime-main.03fe7ec5.js",
+    "runtime-main.js.map": "/React-JS-IfYouHadCrypto/static/js/runtime-main.03fe7ec5.js.map",
+    "static/js/2.afdce37c.chunk.js": "/React-JS-IfYouHadCrypto/static/js/2.afdce37c.chunk.js",
+    "static/js/2.afdce37c.chunk.js.map": "/React-JS-IfYouHadCrypto/static/js/2.afdce37c.chunk.js.map",
+    "index.html": "/React-JS-IfYouHadCrypto/index.html",
+    "static/css/main.5c62a303.chunk.css.map": "/React-JS-IfYouHadCrypto/static/css/main.5c62a303.chunk.css.map",
+    "static/js/2.afdce37c.chunk.js.LICENSE.txt": "/React-JS-IfYouHadCrypto/static/js/2.afdce37c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.88c6018a.js",
+    "static/js/runtime-main.03fe7ec5.js",
     "static/js/2.afdce37c.chunk.js",
     "static/css/main.5c62a303.chunk.css",
     "static/js/main.a262ef82.chunk.js"
