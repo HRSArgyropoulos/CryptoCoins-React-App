@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/IfUHadCrypto-ReactJS/static/css/main.7e82b603.chunk.css",
-    "main.js": "/IfUHadCrypto-ReactJS/static/js/main.5c01b3e2.chunk.js",
-    "main.js.map": "/IfUHadCrypto-ReactJS/static/js/main.5c01b3e2.chunk.js.map",
+    "main.css": "/IfUHadCrypto-ReactJS/static/css/main.5c62a303.chunk.css",
+    "main.js": "/IfUHadCrypto-ReactJS/static/js/main.a262ef82.chunk.js",
+    "main.js.map": "/IfUHadCrypto-ReactJS/static/js/main.a262ef82.chunk.js.map",
     "runtime-main.js": "/IfUHadCrypto-ReactJS/static/js/runtime-main.88c6018a.js",
     "runtime-main.js.map": "/IfUHadCrypto-ReactJS/static/js/runtime-main.88c6018a.js.map",
-    "static/js/2.f0eaf3ce.chunk.js": "/IfUHadCrypto-ReactJS/static/js/2.f0eaf3ce.chunk.js",
-    "static/js/2.f0eaf3ce.chunk.js.map": "/IfUHadCrypto-ReactJS/static/js/2.f0eaf3ce.chunk.js.map",
+    "static/js/2.afdce37c.chunk.js": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js",
+    "static/js/2.afdce37c.chunk.js.map": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js.map",
     "index.html": "/IfUHadCrypto-ReactJS/index.html",
-    "static/css/main.7e82b603.chunk.css.map": "/IfUHadCrypto-ReactJS/static/css/main.7e82b603.chunk.css.map",
-    "static/js/2.f0eaf3ce.chunk.js.LICENSE.txt": "/IfUHadCrypto-ReactJS/static/js/2.f0eaf3ce.chunk.js.LICENSE.txt"
+    "static/css/main.5c62a303.chunk.css.map": "/IfUHadCrypto-ReactJS/static/css/main.5c62a303.chunk.css.map",
+    "static/js/2.afdce37c.chunk.js.LICENSE.txt": "/IfUHadCrypto-ReactJS/static/js/2.afdce37c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.88c6018a.js",
-    "static/js/2.f0eaf3ce.chunk.js",
-    "static/css/main.7e82b603.chunk.css",
-    "static/js/main.5c01b3e2.chunk.js"
+    "static/js/2.afdce37c.chunk.js",
+    "static/css/main.5c62a303.chunk.css",
+    "static/js/main.a262ef82.chunk.js"
   ]
 }
