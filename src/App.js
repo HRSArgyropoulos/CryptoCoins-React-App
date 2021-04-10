@@ -3,6 +3,7 @@ import Portfolio from './components/Portfolio';
 import Header from "./components/Header";
 import PackStore from './components/PackStore';
 import Packages from './components/Packages';
+import Leaderboard from './components/Leaderboard';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <CryptoPrices/>
       <PackStore />
       <Packages/>
+      <Leaderboard/>
     </div>
   )
 }
