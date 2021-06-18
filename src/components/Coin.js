@@ -38,12 +38,13 @@ class Coin extends React.Component {
   }
 
   render() {
+    const { price } = this.state;
     return (
         <div className="coin-price">
           <h2>{this.state.name}</h2>
           <small>{this.state.base}</small>
           <div style={{color: this.state.rise ? "green" : "red"}}>{this.state.price + " " + this.state.currency}</div>
-          <BuyCoin className="buy-coin" price={this.state.price}/>
+          <BuyCoin className="buy-coin" price={price}/>
         </div>
     );
   }
