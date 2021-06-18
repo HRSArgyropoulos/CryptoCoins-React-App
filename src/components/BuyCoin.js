@@ -1,12 +1,37 @@
 import React from 'react'
 
-const BuyCoin = (props) => {
-    return (
-        <div>
-            <input type="number" min="0" placeholder="enter amount"/>
-            <button type="submit">Buy</button>
-        </div>
-    )
+class BuyCoin extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            coinAmount: 0,
+            coinPrice: props.price  // renders in the start so price will be 0 (async fetch not returned price yet)
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange = (event) => {
+        this.setState({
+            coinAmount: event.target.value
+        });
+    }
+
+    handleSubmit = (event) => {
+        const totalPurchaseCost = this.state.coinAmount * this.state.coinPrice;
+        alert(`I would check balance for ${totalPurchaseCost} euros`);
+        event.preventDefault();
+    }
+
+
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <input type="number" min="0" placeholder="Enter amount" value={this.state.coinAmount} onChange={this.handleChange}/>
+                <button type="submit">Buy</button>
+            </form>
+        )
+    }
 }
 
 export default BuyCoin

@@ -5,12 +5,13 @@ class Coin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {name: props.name, base: props.base, price: 0, currency: "€", rise: true };
+    this.updateCoin();
   }
 
   componentDidMount() {
     this.coinID = setInterval(() => {
       this.updateCoin();
-    }, 1 * 1000);
+    }, 10 * 1000);
   }
 
   componentWillUnmount() {
