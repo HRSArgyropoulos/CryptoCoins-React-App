@@ -3,6 +3,7 @@
   --blue: rgb(98, 181, 248);
   --sunglow: #FDCA40;
   --orange: #F79824;
+  --light-grey: rgb(68, 68, 68);
   --radius: 10px;
 }
 
@@ -112,7 +113,7 @@ input::placeholder {
 
 .pack {
   color: white;
-  background-color: rgb(68, 68, 68);
+  background-color: var(--light-grey);
   height: 300px;
   max-width: 100%;
   width: 300px;
@@ -200,3 +201,27 @@ input::placeholder {
 
 /* Leaderboard */
 
+.leaderboard {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  border-radius: var(--radius);
+  background-color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+.leaderboard h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.leaderboard-score > * {
+  display: inline-block;
+  width: 33%;
+}
