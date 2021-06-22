@@ -10,10 +10,12 @@ const AddCoinsRequest = () => {
   };
 
   const handleSumbmit = (e) => {
-    // push coin to list of coins
-    setCoins([...coins, coinRequest]);
-    // set coin input value to default
-    setCoinRequest('');
+    // push coin to list of coins if not empty
+    if (coinRequest) {
+      setCoins([...coins, coinRequest]);
+      // set coin input value to default
+      setCoinRequest('');
+    }
     e.preventDefault();
   };
 
