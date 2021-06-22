@@ -1,8 +1,8 @@
 :root {
   --dark: #141414;
   --blue: rgb(98, 181, 248);
-  --sunglow: #FDCA40;
-  --orange: #F79824;
+  --sunglow: #fdca40;
+  --orange: #f79824;
   --light-grey: rgb(68, 68, 68);
   --radius: 10px;
 }
@@ -13,7 +13,8 @@
   box-sizing: border-box;
 }
 
-body,button {
+body,
+button {
   font-family: 'Karla', sans-serif;
   background-color: var(--dark);
 }
@@ -42,7 +43,7 @@ ul {
 
 .prices-container {
   max-width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -127,7 +128,7 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /* PACKAGES */
@@ -155,13 +156,11 @@ input::placeholder {
   margin-bottom: 2rem;
 }
 
-
 .pkg {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-areas:
-    "free support shareholder";
+  grid-template-areas: 'free support shareholder';
 }
 
 .pkg > div {
@@ -193,9 +192,9 @@ input::placeholder {
   .pkg {
     grid-template-columns: 1fr;
     grid-template-areas:
-    "free"
-    "support"
-    "shareholder";
+      'free'
+      'support'
+      'shareholder';
   }
 }
 
@@ -209,7 +208,7 @@ input::placeholder {
   text-align: center;
   border-radius: var(--radius);
   background-color: var(--light-grey);
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .leaderboard h2 {
@@ -224,4 +223,22 @@ input::placeholder {
 .leaderboard-score > * {
   display: inline-block;
   width: 33%;
+}
+
+/* Request Coins */
+.request-coins-form {
+  display: flex;
+  justify-content: center;
+}
+
+.request-coins-form label > * {
+  margin: 0 0.5rem;
+}
+
+.request-coins-form input {
+  border-radius: var(--radius);
+}
+
+.requested-coins-list {
+  text-align: center;
 }

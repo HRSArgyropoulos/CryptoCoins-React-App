@@ -5,6 +5,7 @@ import PackStore from './components/PackStore';
 import Packages from './components/Packages';
 import Leaderboard from './components/Leaderboard';
 import Navigation from './components/Navigation';
+import AddCoinsRequest from './components/AddCoinsRequest';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <PackStore />
       <Packages />
       <Leaderboard />
+      <AddCoinsRequest />
     </div>
   );
 }
