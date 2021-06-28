@@ -242,3 +242,15 @@ input::placeholder {
 .requested-coins-list {
   text-align: center;
 }
+
+/* Tweets */
+
+.twitter {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.twitter h2 {
+  margin: 1rem 0;
+}
