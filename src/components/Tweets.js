@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TweetCards from './TweetCards';
 
 const Tweets = () => {
   // tweets state
@@ -19,20 +20,21 @@ const Tweets = () => {
 
   // render component on submit click
   useEffect(() => {
-    if (submitClicked) fetchTweets(tweetTerm);
-    console.log('render');
+    if (submitClicked) {
+      fetchTweets(tweetTerm);
+      setSubmitClicked(!submitClicked);
+    }
+    console.log('render', submitClicked);
   }, [submitClicked]);
-
-  // map tweets list
-  const tweetsList = tweets.map((tweet) => (
-    <li key={tweet.id}>{tweet.name}</li>
-  ));
 
   return (
     <section className="twitter">
       <div className="twitter-search">
         <h2>Search Twitter for a specific crypto</h2>
-        <span>e.g try btc-bitcoin</span>
+        <span>
+          e.g try btc-bitcoin, doge-dogecoin,
+          eth-ethereum
+        </span>
         <input
           type="text"
           value={tweetTerm}
@@ -46,7 +48,7 @@ const Tweets = () => {
           }>
           Search Tweets
         </button>
-        <ul>{tweetsList}</ul>
+        <TweetCards tweets={tweets} />
       </div>
     </section>
   );

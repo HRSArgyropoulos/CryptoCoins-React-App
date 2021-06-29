@@ -247,10 +247,37 @@ input::placeholder {
 
 .twitter {
   margin: 5rem 0;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .twitter h2 {
   margin: 1rem 0;
+}
+
+.twitter input {
+  border-radius: var(--radius);
+  margin: 0 1rem;
+}
+
+.twitter-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.twitter-cards li {
+  width: 33%;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .twitter-cards li {
+    width: 100%;
+  }
+}
+
+.twitter-cards img {
+  width: 100%;
+  object-fit: cover;
 }
