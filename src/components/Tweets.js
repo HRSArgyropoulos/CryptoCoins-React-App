@@ -1,11 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import TweetCards from './TweetCards';
 
+// options in select coin (List of coins and codes)
+const coins = [
+  {
+    name: 'Bitcoin',
+    code: 'btc-bitcoin',
+  },
+  {
+    name: 'Dogecoin',
+    code: 'doge-dogecoin',
+  },
+  {
+    name: 'Ethereum',
+    code: 'eth-ethereum',
+  },
+];
+
 const Tweets = () => {
   // tweets state
   const [tweets, setTweets] = useState([]);
   // input search state
-  const [tweetTerm, setTweetTerm] = useState('');
+  const [optionsState, setOptionsState] = useState(
+    coins[0].code
+  );
   const [submitClicked, setSubmitClicked] =
     useState(false);
 
@@ -21,7 +39,7 @@ const Tweets = () => {
   // render component on submit click
   useEffect(() => {
     if (submitClicked) {
-      fetchTweets(tweetTerm);
+      fetchTweets(optionsState);
       setSubmitClicked(!submitClicked);
     }
     console.log('render', submitClicked);
@@ -31,17 +49,17 @@ const Tweets = () => {
     <section className="twitter">
       <div className="twitter-search">
         <h2>Search Twitter for a specific crypto</h2>
-        <span>
-          e.g try btc-bitcoin, doge-dogecoin,
-          eth-ethereum
-        </span>
-        <input
-          type="text"
-          value={tweetTerm}
+        <select
+          value={optionsState}
           onChange={(e) =>
-            setTweetTerm(e.target.value)
-          }
-        />
+            setOptionsState(e.target.value)
+          }>
+          {coins.map((coin) => (
+            <option value={coin.code} key={coin.code}>
+              {coin.name}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() =>
             setSubmitClicked(!submitClicked)
